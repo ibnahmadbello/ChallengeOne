@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 val intent = Intent(this, MyProfile::class.java)
                 startActivity(intent)
             }
-//            R.id.about_me_button -> Toast.makeText(this, "About me clicked", Toast.LENGTH_SHORT).show()
             R.id.about_alc_button -> {
                 val intent = Intent(this, AboutALC::class.java)
                 startActivity(intent)
