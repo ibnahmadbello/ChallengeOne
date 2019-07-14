@@ -3,4 +3,6 @@
     <string name="about_alc">About ALC</string>
     <string name="my_profile">My Profile</string>
     <string name="welcome_to_alc">Welcome to ALC 4.0</string>
+    <string name="profile_label">My Profile</string>
+    <string name="alc_label">About ALC</string>
 </resources>

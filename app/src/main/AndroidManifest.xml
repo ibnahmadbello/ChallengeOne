@@ -12,11 +12,13 @@
             tools:ignore="GoogleAppIndexingWarning">
 
         <activity android:name=".MyProfile"
-        android:parentActivityName=".MainActivity"/>
+        android:parentActivityName=".MainActivity"
+        android:label="@string/profile_label"/>
 
 
         <activity android:name=".AboutALC"
-        android:parentActivityName=".MainActivity"/>
+        android:parentActivityName=".MainActivity"
+        android:label="@string/alc_label"/>
 
 
         <activity android:name=".MainActivity">

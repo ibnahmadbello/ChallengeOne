@@ -1,5 +1,6 @@
 package com.example.alc4phase1
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -18,12 +19,20 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         val aboutMeButton : Button = findViewById(R.id.about_me_button)
         aboutMeButton.setOnClickListener(this)
+
     }
 
     override fun onClick(view: View?) {
         when(view?.id){
-            R.id.about_me_button -> Toast.makeText(this, "About me clicked", Toast.LENGTH_SHORT).show()
-            R.id.about_alc_button -> Toast.makeText(this, "About ALC", Toast.LENGTH_SHORT).show()
+            R.id.about_me_button -> {
+                val intent = Intent(this, MyProfile::class.java)
+                startActivity(intent)
+            }
+//            R.id.about_me_button -> Toast.makeText(this, "About me clicked", Toast.LENGTH_SHORT).show()
+            R.id.about_alc_button -> {
+                val intent = Intent(this, AboutALC::class.java)
+                startActivity(intent)
+            }
         }
     }
 }
