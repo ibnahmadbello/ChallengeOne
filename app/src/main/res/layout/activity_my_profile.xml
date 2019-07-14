@@ -7,4 +7,161 @@
         android:layout_height="match_parent"
         tools:context=".MyProfile">
 
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:srcCompat="@tools:sample/avatars"
+            android:id="@+id/imageView"
+            android:src="@drawable/abdulrazaq"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="parent" android:contentDescription="@string/profile_picture"/>
+
+    <TextView
+            android:layout_margin="16dp"
+            android:gravity="center_horizontal"
+            android:text="@string/ahmed_abdulrazaq_bello"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintBottom_toTopOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/profile_name"
+            android:textSize="@dimen/profile_name_size"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:fontFamily="monospace"/>
+
+    <View
+            android:background="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/track"
+            app:layout_constraintTop_toBottomOf="@id/profile_name"
+            android:id="@+id/guideline"/>
+    <LinearLayout
+            android:id="@+id/track"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            app:layout_constraintTop_toBottomOf="@id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+        <TextView
+                android:text="@string/track"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/tracklabel" android:layout_weight="1"/>
+        <TextView
+                android:text="@string/android"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/trackvalue" android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/country"
+            app:layout_constraintTop_toBottomOf="@id/track"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginRight="16dp" android:layout_marginEnd="16dp"
+            android:layout_marginLeft="16dp" android:layout_marginStart="16dp" android:layout_marginTop="16dp">
+
+        <TextView
+                android:text="@string/country"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/countrylabel" android:layout_weight="1"/>
+        <TextView
+                android:text="@string/nigeria"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/countryvalue" android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/country"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/email"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+
+        <TextView
+                android:text="@string/email"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/emaillabel" android:layout_weight="1"/>
+        <TextView
+                android:text="@string/ibnahmadbello_gmail_com"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/emailvalue" android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/phone"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+
+        <TextView
+                android:text="@string/phone_number"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/phonelabel" android:layout_weight="1"/>
+        <TextView
+                android:text="@string/_08038131659"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/phonevalue" android:layout_weight="1"/>
+
+    </LinearLayout>
+    <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/phone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/slack"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" android:layout_marginRight="16dp" android:layout_marginEnd="16dp">
+
+        <TextView
+                android:text="@string/slack_username"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/slacklabel" android:layout_weight="1"/>
+        <TextView
+                android:text="@string/ibnahmad"
+                android:gravity="start"
+                android:textSize="@dimen/text_size"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/slackvalue" android:layout_weight="1"/>
+
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

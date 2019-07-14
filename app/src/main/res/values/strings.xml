@@ -5,4 +5,16 @@
     <string name="welcome_to_alc">Welcome to ALC 4.0</string>
     <string name="profile_label">My Profile</string>
     <string name="alc_label">About ALC</string>
+    <string name="track">Track:</string>
+    <string name="android">Android</string>
+    <string name="country">Country:</string>
+    <string name="nigeria">Nigeria</string>
+    <string name="email">Email:</string>
+    <string name="ibnahmadbello_gmail_com">ibnahmadbello@gmail.com</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="_08038131659">08038131659</string>
+    <string name="slack_username">Slack Username</string>
+    <string name="ibnahmad">ibnahmad</string>
+    <string name="profile_picture">Profile Picture</string>
+    <string name="ahmed_abdulrazaq_bello">Ahmed Abdulrazaq Bello</string>
 </resources>
