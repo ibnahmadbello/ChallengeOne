@@ -30,7 +30,7 @@
             app:layout_constraintStart_toStartOf="@+id/welcome_text_view"
             app:layout_constraintEnd_toEndOf="@+id/welcome_text_view" app:layout_constraintHorizontal_bias="0.636"
             app:layout_constraintVertical_bias="0.352" android:background="@android:color/holo_orange_dark"
-            android:fontFamily="serif" android:textColor="@android:color/background_dark" android:padding="4dp"/>
+            android:fontFamily="serif" android:textColor="@android:color/background_dark" android:padding="8dp"/>
     <Button
             android:text="@string/my_profile"
             android:layout_width="wrap_content"
@@ -42,6 +42,6 @@
             app:layout_constraintStart_toStartOf="@+id/about_alc_button"
             android:background="@android:color/holo_orange_dark" app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintVertical_bias="0.275" android:fontFamily="serif"
-            android:textColor="@android:color/background_dark" android:padding="4dp"/>
+            android:textColor="@android:color/background_dark" android:padding="8dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
